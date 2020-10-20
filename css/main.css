@@ -1,0 +1,239 @@
+
+body{
+    background: #f7f7f7;
+    font-family: "Lato", sans-serif;
+}
+/** container of the page */
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+}
+/**************************************************
+Side bar
+**************************************************/
+
+/* The sidebar menu */
+aside{
+    height: 100%; /* Full-width: remove this if you want "auto" height */
+    width: 120px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left:0; 
+    background-color: #cc0000; /* Red */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+aside div{
+    height: 110px;
+    width: 100%;
+    line-height: 110px; /* center text */
+    text-align: center; /* center text */
+    border-bottom: 1px solid #cdcdcd;
+}
+aside div a {
+    text-decoration: none; /* To avoid the default style of a tag */
+    font-size: 20px;
+    color: #fff;
+    display: block; /* Give them a display of block to make sure they appear line after line */
+    border-bottom: 1px solid green;
+}
+
+/* When you mouse over the navigation links, hange their color */
+aside div:hover {
+    background: darkorange;
+    color: #f1f1f1;
+}
+
+/**************************************************
+        wrapper style
+**************************************************/
+
+.wrapper {
+    margin-left: 120px;
+}
+
+/**************************************************
+            Header of the page
+**************************************************/
+
+.page-header {
+    padding: 10px 10px 20px 10px;
+    background: #3d3d3d;
+    overflow-y: hidden !important; /* The !important property here means its specificity become the highest */
+}
+
+.header-info {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+/**************************************************
+        Home page main header of the page
+**************************************************/
+
+.home-content {
+    width: 100%;
+}
+.home-logo {
+    background: #3d3d3d;
+    width: 490px;
+}
+
+.home-trending {
+    background: #003663;
+    color: #fff;
+    max-width: 480px;
+    height: 600px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -20px;
+}
+ .logo {
+     margin: 40px 0 40px 10px;
+     border-radius: 5px;
+ }
+
+ /**************************************************
+      The custom list item under the trending
+**************************************************/
+
+.custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+}
+.custom-counter li:before{
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #3d3d3d;
+    color: #f0c419;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/**************************************************
+          Home content
+**************************************************/
+
+.home-article {
+    float: right;
+    margin-left: 600px;
+    margin-top: -765px;
+    position: relative;
+    
+}
+
+.article-image {
+    display: block;
+    width: 100%;
+    height: 765px;
+}
+
+.talent {
+    font-size: 4em;
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.readmore {
+    position: absolute;
+    bottom: 15px; 
+    left: 20px;
+    padding: 10px 20px 10px 20px;
+    background: #FEC500; color: #222;
+    border: none; text-decoration: none;
+    font-weight: 800;
+    
+}
+
+/**************************************************
+          Header of the page
+**************************************************/
+
+header img {
+    float: left;
+}
+header nav {
+    float: right;
+    margin-top: 16px;
+    color: #fff;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 8px 12px 8px 12px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.facebook {
+    background: #3b5998;
+}
+.twitter {
+    background: #00aced;
+}
+.google {
+    background: #d34836;
+}
+.whatsapp {
+    background: #4caf50;
+}
+.side-image {
+    display: block;
+    width: 100%;
+}
+.content-image {
+    float: left;
+    width: 400px;
+    height: px;
+} 
+div .content-text {
+    float: right;
+    margin-left: 400px;
+    margin-top: -700px;
+    padding: 40px;
+    background: darkorange;
+    height: 700px;
+}
+
+/**************************************************
+          Typography styling
+**************************************************/
+
+h1 {
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px 0 10px 0;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 8px 0 8px 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+
